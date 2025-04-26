@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="nl" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="nl" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +20,28 @@
     <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold text-blue-600">Stitch</div>
+                <a href="https://readthisnow.github.io/slapende-stitch-knuffel-2025-04-26-h6j0h" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">Stitch</a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Features</a>
                     <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Voordelen</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Reviews</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Over Ons</a>
                     <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
                 </div>
-                <a href="https://amzn.to/4iwURuA" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                <button class="mobile-menu-button md:hidden" aria-label="Menu">
+                    <i class="fas fa-bars text-2xl text-gray-600"></i>
+                </button>
+                <a href="https://amzn.to/4iwURuA" class="hidden md:inline-block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
                     Koop Nu
                 </a>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-xl absolute left-0 right-0 p-4">
+                <a href="#features" class="block py-2 px-4 text-gray-600 hover:bg-blue-50 rounded transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block py-2 px-4 text-gray-600 hover:bg-blue-50 rounded transition-colors duration-300">Voordelen</a>
+                <a href="#testimonials" class="block py-2 px-4 text-gray-600 hover:bg-blue-50 rounded transition-colors duration-300">Reviews</a>
+                <a href="#about" class="block py-2 px-4 text-gray-600 hover:bg-blue-50 rounded transition-colors duration-300">Over Ons</a>
+                <a href="#faq" class="block py-2 px-4 text-gray-600 hover:bg-blue-50 rounded transition-colors duration-300">FAQ</a>
+                <a href="https://amzn.to/4iwURuA" class="block mt-2 bg-blue-600 text-white px-4 py-2 rounded-full text-center hover:bg-blue-700 transition-all duration-300">Koop Nu</a>
             </div>
         </nav>
     </header>
@@ -32,7 +53,7 @@
                     Slapende Stitch Knuffel
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto">
-                    Koop Nu Met Speciale Korting - Nog Maar Beperkt Beschikbaar!
+                    Ervaar de ultieme knuffelervaring met onze premium Stitch knuffel. Handgemaakt met liefde en perfect voor Disney fans van alle leeftijden!
                 </p>
                 <div class="flex justify-center gap-6 flex-wrap">
                     <a href="https://amzn.to/4iwURuA" class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
@@ -53,18 +74,18 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     <div class="bg-blue-50 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                         <i class="fas fa-heart text-3xl text-blue-600 mb-4"></i>
-                        <h3 class="text-xl font-semibold mb-4">Super Zacht Materiaal</h3>
-                        <p class="text-gray-600">Perfect om mee te knuffelen en te slapen</p>
+                        <h3 class="text-xl font-semibold mb-4">Premium Zachtheid</h3>
+                        <p class="text-gray-600">Gemaakt van het zachtste pluche materiaal, perfect voor eindeloze knuffelsessies. Hypoallergeen en veilig voor alle leeftijden.</p>
                     </div>
                     <div class="bg-blue-50 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                         <i class="fas fa-star text-3xl text-blue-600 mb-4"></i>
-                        <h3 class="text-xl font-semibold mb-4">Premium Kwaliteit</h3>
-                        <p class="text-gray-600">Duurzaam en wasbaar materiaal</p>
+                        <h3 class="text-xl font-semibold mb-4">Duurzame Kwaliteit</h3>
+                        <p class="text-gray-600">Handgemaakt met premium materialen en dubbele stiksels voor jarenlang plezier. Kleurvast en machine wasbaar.</p>
                     </div>
                     <div class="bg-blue-50 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                         <i class="fas fa-gift text-3xl text-blue-600 mb-4"></i>
                         <h3 class="text-xl font-semibold mb-4">Perfect Cadeau</h3>
-                        <p class="text-gray-600">Ideaal voor alle Disney fans</p>
+                        <p class="text-gray-600">Komt in luxe geschenkverpakking met authenticiteitscertificaat. Ideaal voor verjaardagen en speciale gelegenheden.</p>
                     </div>
                 </div>
             </div>
@@ -76,24 +97,98 @@
                     Exclusieve Voordelen
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div class="flex items-start space-x-4">
+                    <div class="flex items-start space-x-4 hover:transform hover:scale-105 transition-all duration-300">
                         <div class="bg-blue-100 p-3 rounded-full">
                             <i class="fas fa-shipping-fast text-blue-600"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold mb-2">Gratis Verzending</h3>
-                            <p class="text-gray-600">Bij bestelling vandaag - Nog maar 24 uur geldig!</p>
+                            <h3 class="text-xl font-semibold mb-2">Express Verzending</h3>
+                            <p class="text-gray-600">Gratis verzending binnen Nederland. Binnen 24 uur verzonden bij bestelling voor 15:00.</p>
                         </div>
                     </div>
-                    <div class="flex items-start space-x-4">
+                    <div class="flex items-start space-x-4 hover:transform hover:scale-105 transition-all duration-300">
                         <div class="bg-blue-100 p-3 rounded-full">
                             <i class="fas fa-percentage text-blue-600"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold mb-2">Speciale Korting</h3>
-                            <p class="text-gray-600">Tijdelijk 30% korting op je bestelling</p>
+                            <h3 class="text-xl font-semibold mb-2">Limited Time Offer</h3>
+                            <p class="text-gray-600">30% korting + gratis geschenkverpakking bij aankoop vandaag. Bespaar €20 op je bestelling!</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                    Wat Onze Klanten Zeggen
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-blue-50 p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Mijn dochter is dol op deze Stitch knuffel! De kwaliteit is uitstekend en de zachtheid is ongeëvenaard. Perfect cadeau!"</p>
+                        <p class="font-semibold">Lisa van der Berg</p>
+                        <p class="text-sm text-gray-500">Moeder van 2</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"De verzending was supersnel en de verpakking was prachtig. De knuffel zelf overtrof al mijn verwachtingen. Zeer aan te raden!"</p>
+                        <p class="font-semibold">Mark Jansen</p>
+                        <p class="text-sm text-gray-500">Disney Verzamelaar</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Geweldige klantenservice en een fantastisch product. Na 3 maanden nog steeds als nieuw!"</p>
+                        <p class="font-semibold">Emma de Vries</p>
+                        <p class="text-sm text-gray-500">Interieur Stylist</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Deze Stitch knuffel is een absolute must-have voor Disney fans. De aandacht voor detail is indrukwekkend!"</p>
+                        <p class="font-semibold">Thomas Bakker</p>
+                        <p class="text-sm text-gray-500">Speelgoedwinkel Eigenaar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-blue-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+                    Over Ons
+                </h2>
+                <div class="max-w-3xl mx-auto text-center">
+                    <p class="text-gray-600 mb-8">
+                        Opgericht in 2020 door een groep Disney-enthousiastelingen, zijn wij gepassioneerd over het leveren van de hoogste kwaliteit Disney merchandise. Onze reis begon met één missie: het creëren van de perfecte Stitch knuffel die zowel authentiek als duurzaam is.
+                    </p>
+                    <p class="text-gray-600">
+                        Onze kernwaarden zijn kwaliteit, klanttevredenheid en duurzaamheid. We werken uitsluitend met gecertificeerde leveranciers en gebruiken milieuvriendelijke materialen. Elke Stitch knuffel wordt met de hand gemaakt en ondergaat strenge kwaliteitscontroles.
+                    </p>
                 </div>
             </div>
         </section>
@@ -104,31 +199,39 @@
                     Veelgestelde Vragen
                 </h2>
                 <div class="max-w-3xl mx-auto space-y-6">
-                    <div class="border-b border-gray-200 pb-4">
+                    <div class="border-b border-gray-200 pb-4 hover:bg-blue-50 p-4 rounded-lg transition-all duration-300">
                         <h3 class="text-xl font-semibold mb-2">Is de knuffel wasbaar?</h3>
-                        <p class="text-gray-600">Ja, de Stitch knuffel is machine wasbaar op 30 graden.</p>
+                        <p class="text-gray-600">Ja, de Stitch knuffel is machine wasbaar op 30 graden. We raden aan om een waszak te gebruiken en hem aan de lucht te laten drogen voor optimaal behoud.</p>
                     </div>
-                    <div class="border-b border-gray-200 pb-4">
-                        <h3 class="text-xl font-semibold mb-2">Hoe groot is de knuffel?</h3>
-                        <p class="text-gray-600">De knuffel is ongeveer 30cm groot, perfect om mee te knuffelen.</p>
+                    <div class="border-b border-gray-200 pb-4 hover:bg-blue-50 p-4 rounded-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-2">Wat zijn de exacte afmetingen?</h3>
+                        <p class="text-gray-600">De Stitch knuffel is 30cm hoog, 25cm breed en 20cm diep. Perfect formaat voor zowel kinderen als volwassenen.</p>
                     </div>
-                    <div class="border-b border-gray-200 pb-4">
+                    <div class="border-b border-gray-200 pb-4 hover:bg-blue-50 p-4 rounded-lg transition-all duration-300">
                         <h3 class="text-xl font-semibold mb-2">Hoe lang duurt de levering?</h3>
-                        <p class="text-gray-600">Meestal binnen 2-3 werkdagen bij je thuis.</p>
+                        <p class="text-gray-600">Bij bestellingen voor 15:00 verzenden we dezelfde dag nog. Levering binnen Nederland duurt 1-2 werkdagen. Voor België en Duitsland 2-3 werkdagen.</p>
+                    </div>
+                    <div class="border-b border-gray-200 pb-4 hover:bg-blue-50 p-4 rounded-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-2">Is er een garantie?</h3>
+                        <p class="text-gray-600">Ja, we bieden 2 jaar garantie op fabricagefouten. Daarnaast heb je 30 dagen bedenktijd waarin je de knuffel kosteloos kunt retourneren.</p>
+                    </div>
+                    <div class="border-b border-gray-200 pb-4 hover:bg-blue-50 p-4 rounded-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-2">Zijn er verschillende formaten beschikbaar?</h3>
+                        <p class="text-gray-600">Momenteel bieden we alleen het standaard formaat van 30cm aan. We werken aan een grotere versie die later dit jaar beschikbaar komt.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-20 bg-blue-600 text-white">
-            <div class="container mx-auto px-6 text-center">
+        <section class="py-20 bg-blue-600 text-white" style="background-image: url('https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=1920'); background-size: cover; background-position: center;">
+            <div class="container mx-auto px-6 text-center bg-blue-600/80 py-12 rounded-3xl">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8">
                     Bestel Nu Met Korting!
                 </h2>
                 <p class="text-xl mb-12 max-w-2xl mx-auto">
-                    Nog maar enkele stuks beschikbaar. Profiteer nu van 30% korting!
+                    Nog maar enkele stuks beschikbaar. Profiteer nu van 30% korting en gratis verzending!
                 </p>
-                <a href="https://amzn.to/4iwURuA" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 inline-block">
+                <a href="https://amzn.to/4iwURuA" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 inline-block shadow-lg">
                     Direct Bestellen
                 </a>
             </div>
@@ -140,25 +243,26 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Contact</h3>
-                    <p class="text-gray-400">contact@example.com</p>
+                    <p class="text-gray-400 hover:text-white transition-colors duration-300">contact@example.com</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://readthisnow.github.io/slapende-stitch-knuffel-2025-04-26-h6j0h/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://readthisnow.github.io/slapende-stitch-knuffel-2025-04-26-h6j0h/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://readthisnow.github.io/slapende-stitch-knuffel-2025-04-26-h6j0h/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Volg Ons</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 transform hover:scale-110">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </div>
@@ -169,5 +273,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
